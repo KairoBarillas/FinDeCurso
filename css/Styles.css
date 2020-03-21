@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: MonotypeCorsiva;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/MonotypeCorsiva.ttf") format("ttf"), url("../fonts/MonotypeCorsiva.woff") format("woff");
+}
+
+body{
+    font-family: MonotypeCorsiva, Tahoma, sans-serif;
+    background-image: url("../img/mesa-pizza.jpg");
+}
+
+.contenedor{
+    width: 90%;
+    height: 1920px;
+    max-width: 1366px;
+    margin: 20px auto;
+    overflow: hidden;
+    background-image: url("../img/mesa-pizza-02.jpg");
+    background-repeat: repeat;
+    background-size: initial;
+}
+
+.header{
+    width: 100%;
+    height: 180px;
+    /*background-image: url("../img/pizza-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    margin: 15px 0 auto auto;
+}
+
+.contenedor-carrusel{
+    position: relative;
+    width: auto;
+    height: 180px;
+}
+
+.imagen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.imagen img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenedor-carrusel .sesion{
+    width: 100%;
+    height: 140px;
+    display: block;
+    position: absolute;
+    z-index: 100;   
+    margin-top: 15px; 
+}
+
+.boton{
+    text-decoration: none;
+    border: none;
+    background-color: #228b22;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #faebd7;
+    padding: 15px;
+    margin: 40px 10px;
+    float: left; 
+    border-radius: 50%;  
+}
+
+#logo{
+    width: 160px;
+    height: 140px;
+    text-decoration: none;
+    margin-left: 290px;
+}
+
+#box{
+    width: 110px;
+    height: 110px;
+    text-decoration: none;
+    float: right;
+}
+
+#carrito{
+    text-decoration: underline rgb(184, 51, 51);
+    float: right;
+    font-size: 24pt;
+    font-weight: 500;
+    margin-top: 40px;
+    color: #faebd7;
+    background-color: #228b22;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+.menu{
+    background-color: rgb(184, 51, 51);
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu ul li a{
+    font-size: 32pt;
+    color: #faebd7;
+    text-decoration: none;
+    padding: 0 5px 1px 0;
+    text-align: center;
+    margin-left: 110px;
+}
+
+#ofertas{
+    margin-top: 60px;
+    color: #faebd7;
+}
+
+#bienvenido{
+    width: 95%;
+    height: 120px;
+    margin: auto auto;
+}
+
+#bienvenido h5{
+    font-size: 24pt;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 50%;
+}
+
+#bienvenido h3{
+    font-size: 20pt;
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 15%;
+}
+
+#bienvenido h2{
+    font-size: 18pt;
+    font-weight: 300;
+    display: inline;
+}
+
+#ingredientes{
+    width: 80%;
+    height: 1140px;
+    margin: auto;
+}
+
+#ingredientes #hawaiana{
+    display: block;
+    margin: 0 auto;
+}
+
+#ingredientes #hawaiana img{
+    width: 1092px;
+    height: 640px;
+}
+
+#ingredientes .pizza{
+    margin: auto;
+}
+
+#ingredientes .pizza img{
+    margin: 15px 0;
+    width: 520px;
+    height: 400px;
+}
+
+#vegetariana{
+    float: right;
+}
+
+#info ul{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-top: solid #228b22 2pt;
+    border-bottom: solid #228b22 2pt;
+    padding-bottom: 80px;
+    list-style-image: url("../img/pizza.png");
+}
+
+#info ul h3{
+    font-size: 18pt;
+    color: #faebd7;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#info ul li{
+    display: block;
+    width: 520px;
+    float: left;
+    list-style-image: url("../img/pizza.png");
+}
+
+#info ul li a{
+    color: #faebd7;
+    margin: 0px 20px 0px 0;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+#seguridad h6{
+    font-size: 12pt;
+    color: #faebd7;
+    margin-left: 37%;
+    margin-top: 20px;
+}
+
+#seguridad img{
+    display: block;
+    width: 300px;
+    height: 166px;
+    float: left;
+    margin-left: 120px;
+}
+
+#seguridad h3{
+    width: 760px;
+    height: 100px;
+    color: #ffff;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-left: 470px;
+    text-align: justify;
+    font-size: 16pt;
+}
+
+.menu ul li a:hover{
+    background-color: rgb(119, 25, 25);
+}
+
+.boton:hover{
+    background-color: #0f500f;
+}
+
+#carrito:hover{
+    background-color: #0f500f;
+}
+
+#logo:hover{
+    width: 170px;
+    height: 150px;
+}
+
+#box:hover{
+    width: 125px;
+    height: 125px;
+}
+
+.actual{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+}
